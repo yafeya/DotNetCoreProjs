@@ -1,0 +1,23 @@
+<h2>All Guys</h2>
+<div>
+    <div *ngFor="let person of persons;">
+        <div (click)="onSelectPerson(person)">
+            {{person.name}}
+        </div>
+    </div>
+
+    <div>
+        <dynamic-component [componentData]="componentData"></dynamic-component>
+    </div>
+
+    <div style="height: 100px">
+    </div>
+
+    <div>
+        <input type="button" value="Get All" (click)="onGetAll()" />
+        <input type="button" value="Get by Id" (click)="onGetById()" />
+        <input type="button" value="PUT" (click)="onPut()" />
+        <input type="button" value="POST" (click)="onPost()" />
+        <input type="button" value="Delete" (click)="onDelete()" />
+    </div>
+</div>

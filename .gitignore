@@ -46,3 +46,14 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /TempTest
+
+# Ignore Angular Tempfiles.
+./**/node_modules/
+./**/build/
+./**/npm-debug.log
+./**/debug.log
+./**/.DS_Store
+./**/src/app/**/*.js
+./**/src/app/**/*.map
+./**/dist/
+./**/*.logs
