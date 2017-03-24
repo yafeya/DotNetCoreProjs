@@ -1,5 +1,5 @@
---temp-output:D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\obj\Debug\netcoreapp1.0\
---out:D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\bin\Debug\netcoreapp1.0\WebApiDemo.dll
+--temp-output:D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\obj\Debug\netcoreapp1.0\
+--out:D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\bin\Debug\netcoreapp1.0\WebApiDemo.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -77,8 +77,8 @@
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Globalization.CultureInfoCache\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Globalization.CultureInfoCache.dll
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Localization\1.0.0\lib\netstandard1.3\Microsoft.Extensions.Localization.dll
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Localization.Abstractions\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Localization.Abstractions.dll
---reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Logging.dll
---reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging.Abstractions\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll
+--reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging\1.1.1\lib\netstandard1.1\Microsoft.Extensions.Logging.dll
+--reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging.Abstractions\1.1.1\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging.Console\1.0.0\lib\netstandard1.3\Microsoft.Extensions.Logging.Console.dll
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.Logging.Debug\1.0.0\lib\netstandard1.3\Microsoft.Extensions.Logging.Debug.dll
 --reference:C:\Users\feiyyang\.nuget\packages\Microsoft.Extensions.ObjectPool\1.0.0\lib\netstandard1.3\Microsoft.Extensions.ObjectPool.dll
@@ -179,10 +179,10 @@
 --reference:C:\Users\feiyyang\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\feiyyang\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\feiyyang\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\obj\Debug\netcoreapp1.0\WebApiDemodotnet-compile.deps.json",WebApiDemo.deps.json
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Program.cs
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Startup.cs
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Controllers\ToDoController.cs
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\ITodoRepository.cs
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\ToDoItem.cs
-D:\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\TodoRepository.cs
+--resource:"D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\obj\Debug\netcoreapp1.0\WebApiDemodotnet-compile.deps.json",WebApiDemo.deps.json
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Program.cs
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Startup.cs
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Controllers\ToDoController.cs
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\ITodoRepository.cs
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\ToDoItem.cs
+D:\DotNetCoreProjs\DotNetCoreProjs\WebApiDemo\src\WebApiDemo\Models\TodoRepository.cs
