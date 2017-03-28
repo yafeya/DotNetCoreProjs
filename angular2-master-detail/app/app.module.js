@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var app_peopleService_1 = require('./app.peopleService');
+var todoItemsService_1 = require('./todoItemsService');
 var dynamic_component_1 = require('./dynamic-component');
 var details = require('./DetailsComponents/index');
 var AppModule = (function () {
@@ -19,7 +21,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, http_1.HttpModule],
             declarations: [
                 app_component_1.AppComponent,
                 dynamic_component_1.DynamicComponent,
@@ -27,7 +29,7 @@ var AppModule = (function () {
                 details.TeacherDetailComponent,
                 details.MusicianDetailComponent
             ],
-            providers: [app_peopleService_1.PeopleService],
+            providers: [app_peopleService_1.PeopleService, todoItemsService_1.ToDoItemsService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

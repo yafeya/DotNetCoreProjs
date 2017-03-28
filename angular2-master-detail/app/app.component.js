@@ -10,11 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var app_peopleService_1 = require('./app.peopleService');
+var todoItemsService_1 = require('./todoItemsService');
 var details = require('./DetailsComponents/index');
 var models = require('./Models/index');
 var AppComponent = (function () {
-    function AppComponent(peopleService) {
+    function AppComponent(peopleService, todoItemsService) {
         this.peopleService = peopleService;
+        this.todoItemsService = todoItemsService;
         this.persons = this.peopleService.persons;
         this.currentPerson = this.persons[0];
         var func1 = function () { return new models.Musician(); };
@@ -60,26 +62,22 @@ var AppComponent = (function () {
         }
     };
     AppComponent.prototype.onGetAll = function () {
-        alert("get All");
+        this.todoItemsService.getAll();
     };
     AppComponent.prototype.onGetById = function () {
-        alert("get by id");
     };
     AppComponent.prototype.onPut = function () {
-        alert("Put");
     };
     AppComponent.prototype.onPost = function () {
-        alert("Post");
     };
     AppComponent.prototype.onDelete = function () {
-        alert("Delete");
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
             templateUrl: 'views/home.html',
         }), 
-        __metadata('design:paramtypes', [app_peopleService_1.PeopleService])
+        __metadata('design:paramtypes', [app_peopleService_1.PeopleService, todoItemsService_1.ToDoItemsService])
     ], AppComponent);
     return AppComponent;
 }());

@@ -40,6 +40,16 @@ namespace WebApiDemo
 
             services.AddMvc();
 
+            services.AddCors(options=> {
+                options.AddPolicy("AllowAllOrigins", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod()
+                           .AllowCredentials();
+                });
+            });
+
             services.AddSingleton<ITodoRepository>(p=>new TodoRepository());
         }
 
@@ -52,6 +62,8 @@ namespace WebApiDemo
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
+
+            app.UseCors("AllowAllOrigins");
 
             app.UseMvc();
         }

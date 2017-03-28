@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DynamicComponent } from './dynamic-component';
 import { PeopleService } from './app.peopleService';
+import { ToDoItemsService } from './todoItemsService';
 import * as details from './DetailsComponents/index';
 import * as models from './Models/index';
 
@@ -13,7 +14,7 @@ export class AppComponent {
   currentPerson: models.Person;
   componentData: any;
 
-  constructor(private peopleService: PeopleService) {
+  constructor(private peopleService: PeopleService, private todoItemsService: ToDoItemsService) {
     this.persons = this.peopleService.persons;
 
     this.currentPerson = this.persons[0];
@@ -66,22 +67,18 @@ export class AppComponent {
   }
 
   onGetAll() {
-    alert("get All");
+    this.todoItemsService.getAll();
   }
 
   onGetById() {
-    alert("get by id");
   }
 
   onPut() {
-    alert("Put");
   }
 
   onPost() {
-    alert("Post");
   }
 
   onDelete() {
-    alert("Delete");
   }
 }

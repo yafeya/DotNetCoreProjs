@@ -18,10 +18,10 @@ namespace WebApiDemo.Controllers
         }
 
         // GET api/values
-        [HttpGet]
         public IEnumerable<ToDoItem> Get()
         {
-            return _repository.GetAll();
+            var items = _repository.GetAll();
+            return items;
         }
 
         // GET api/values/5

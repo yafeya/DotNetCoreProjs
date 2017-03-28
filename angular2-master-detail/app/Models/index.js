@@ -6,4 +6,5 @@ __export(require('./person'));
 __export(require('./student'));
 __export(require('./teacher'));
 __export(require('./musician'));
+__export(require('./ToDoItem'));
 //# sourceMappingURL=index.js.map
